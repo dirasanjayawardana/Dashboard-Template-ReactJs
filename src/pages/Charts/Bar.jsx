@@ -21,11 +21,14 @@ const Bar = () => {
           background={currentMode === 'Dark' ? '#33373E' : '#fff'}
           legendSettings={{ background: 'white' }}
         >
+          {/* ColumnSeries menunjukkan bahwa chart berbentuk bar */}
           <Inject services={[ColumnSeries, Legend, Tooltip, Category, DataLabel]} />
+
           <SeriesCollectionDirective>
             {/* eslint-disable-next-line react/jsx-props-no-spreading */}
             {barCustomSeries.map((item, index) => <SeriesDirective key={index} {...item} />)}
           </SeriesCollectionDirective>
+
         </ChartComponent>
       </div>
     </div>

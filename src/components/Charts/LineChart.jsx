@@ -18,6 +18,7 @@ const LineChart = () => {
       background={currentMode === 'Dark' ? '#33373E' : '#fff'}
       legendSettings={{ background: 'white' }}
     >
+      {/* LineSeries menunjukkan bahwa chart berbentuk line */}
       <Inject services={[LineSeries, DateTime, Legend, Tooltip]} />
       <SeriesCollectionDirective>
         {/* eslint-disable-next-line react/jsx-props-no-spreading */}

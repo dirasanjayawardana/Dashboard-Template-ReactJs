@@ -14,6 +14,7 @@ const Doughnut = ({ id, data, legendVisiblity, height }) => {
       background={currentMode === 'Dark' ? '#33373E' : '#fff'}
       tooltip={{ enable: true }}
     >
+      {/* PieSeries menunjukkan bahwa chart berbentuk pie */}
       <Inject services={[AccumulationLegend, PieSeries, AccumulationDataLabel, AccumulationTooltip]} />
       <AccumulationSeriesCollectionDirective>
         <AccumulationSeriesDirective
